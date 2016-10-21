@@ -18,7 +18,7 @@ import { fullRouting } from './full.routing';
     FormsModule,
     HttpModule,
     fullRouting,
-    NgbModule
+    NgbModule.forRoot()
   ],
   providers: [
     Title

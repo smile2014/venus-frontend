@@ -11,3 +11,4 @@ import 'rxjs';
 // You can import js, ts, css, sass, ...
 import '../public/css/bootstrap.min.css';
 import '../public/css/font-awesome.min.css';
+import '../public/css/style.css';
