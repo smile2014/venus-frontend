@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { ButtonModule } from './button/button.module';
+import { TableModule } from './table/table.module';
 
 const module = [
-    ButtonModule
+  ButtonModule,
+  TableModule
 ];
 
 @NgModule({
@@ -11,5 +13,5 @@ const module = [
 })
 
 export class YkModule {
-  
+
 }
