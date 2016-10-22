@@ -10,6 +10,7 @@ import { fullRouting } from './full.routing';
 import { ClassModule } from '../class/class.module';
 import { SharedModule } from '../shared/shared.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DemoModule } from '../demo/demo.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     fullRouting,
     NgbModule.forRoot(),
     NavbarModule,
+    DemoModule,
     SidebarModule,
     ClassModule
   ],

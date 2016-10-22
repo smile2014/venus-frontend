@@ -24,3 +24,7 @@
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
     background-color: #0275d8;
 }
+
+.list-group-item i {
+    padding:0 .5rem;
+}

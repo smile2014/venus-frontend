@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'yk-button',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class ButtonComponent {
-  
+
+  @Input() text:string;
+  @Input() type:string;
+
+  setClass() {
+    return 'btn btn-' + this.type;
+  }
 }

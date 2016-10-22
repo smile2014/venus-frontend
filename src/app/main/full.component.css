@@ -19,5 +19,7 @@ ul li a {
 
 .content {
     margin-left: 10rem;
-    padding-top: 2.75rem;
+    padding-top: 3rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
 }
