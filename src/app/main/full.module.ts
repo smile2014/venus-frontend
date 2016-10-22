@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { NavbarModule } from '../navbar/navbar.module';
+
 import { FullComponent } from './full.component';
 import { fullRouting } from './full.routing';
 
@@ -18,7 +20,8 @@ import { fullRouting } from './full.routing';
     FormsModule,
     HttpModule,
     fullRouting,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    NavbarModule
   ],
   providers: [
     Title
