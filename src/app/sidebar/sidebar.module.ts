@@ -1,28 +1,29 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { NavbarComponent } from './navbar.component';
+import { SidebarComponent } from './sidebar.component';
 import { fullRouting } from '../main/full.routing';
 
 @NgModule({
   declarations:[
-      NavbarComponent
+      SidebarComponent
   ],
   imports:[
     BrowserModule,
-    FormsModule,
     HttpModule,
+    FormsModule,
     fullRouting
   ],
   providers:[
-    
+      
   ],
   exports:[
-      NavbarComponent
+      SidebarComponent
   ]
 })
 
-export class NavbarModule {
+export class SidebarModule {
   
 }

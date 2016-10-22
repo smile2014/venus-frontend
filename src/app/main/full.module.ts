@@ -1,27 +1,27 @@
 import { NgModule } from '@angular/core';
 
-import { FormsModule } from '@angular/forms';
-import { BrowserModule, Title } from '@angular/platform-browser';
-import { HttpModule } from '@angular/http';
-
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { Title } from '@angular/platform-browser';
 
 import { NavbarModule } from '../navbar/navbar.module';
+import { SidebarModule } from '../sidebar/sidebar.module';
 
 import { FullComponent } from './full.component';
 import { fullRouting } from './full.routing';
+import { ClassModule } from '../class/class.module';
+import { SharedModule } from '../shared/shared.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     FullComponent
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
+    SharedModule,
     fullRouting,
     NgbModule.forRoot(),
-    NavbarModule
+    NavbarModule,
+    SidebarModule,
+    ClassModule
   ],
   providers: [
     Title

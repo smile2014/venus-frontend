@@ -13,8 +13,12 @@ import { FullModule } from './main/full.module';
     routing,
     FullModule
   ],
-  providers: [appRoutingProviders],
-  bootstrap: [AppComponent]
+  providers: [
+    appRoutingProviders
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule {
 }

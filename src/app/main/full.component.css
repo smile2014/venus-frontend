@@ -16,3 +16,8 @@ ul li a {
 .navbar-brand {
     margin-right: 3rem;
 }
+
+.content {
+    margin-left: 10rem;
+    padding-top: 2.75rem;
+}
