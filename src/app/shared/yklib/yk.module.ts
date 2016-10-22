@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { ButtonModule } from './button/button.module';
 import { TableModule } from './table/table.module';
+import { CheckboxModule } from './checkbox/checkbox.module';
 
 const module = [
   ButtonModule,
-  TableModule
+  TableModule,
+  CheckboxModule
 ];
 
 @NgModule({

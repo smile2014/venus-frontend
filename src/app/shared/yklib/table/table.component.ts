@@ -9,4 +9,6 @@ import { Component, Input } from '@angular/core';
 export class TableComponent {
   @Input() datas:any[];
   @Input() columns:any[];
+  @Input() index:boolean;
+  @Input() checkbox:boolean;
 }
