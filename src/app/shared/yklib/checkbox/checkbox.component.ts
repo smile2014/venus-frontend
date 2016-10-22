@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector:　'yk-checkbox',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class CheckboxComponent {
-  
+  @Input() disabled:boolean;
+  @Input() text:string;
+  @Input() checked:boolean;
 }

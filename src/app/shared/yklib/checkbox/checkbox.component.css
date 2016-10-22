@@ -26,3 +26,20 @@ input[type="checkbox"]:checked {
     outline: none;
     border: none;
 }
+
+span {
+    padding: 0 .25rem;
+    line-height: 1.25;
+}
+
+input[type="checkbox"]:disabled, input[type="checkbox"]:disabled:hover {
+    background-image: none;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+}
+
+input[type="checkbox"]:disabled:checked, input[type="checkbox"]:disabled:checked:hover {
+    background-image: url("public/images/icon_select_selected.png");
+    outline: none;
+    border: none;
+}
