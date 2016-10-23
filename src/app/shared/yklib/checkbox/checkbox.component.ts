@@ -7,8 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 
 export class CheckboxComponent {
+
   @Input() disabled:boolean;
   @Input() text:string;
   @Input() checked:boolean;
-  
+
 }

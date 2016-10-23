@@ -4,7 +4,7 @@ import { DemoComponent } from './demo.component';
 
 @NgModule({
   declarations: [
-      DemoComponent
+    DemoComponent
   ],
   imports: [
     SharedModule
@@ -15,5 +15,4 @@ import { DemoComponent } from './demo.component';
 })
 
 export class DemoModule {
-
 }
