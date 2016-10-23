@@ -8,6 +8,7 @@
     font-weight: normal;
     color: #333333;
     border: solid 1px #e6e6e6;
+    vertical-align: middle;
 }
 
 .table td {
@@ -15,6 +16,7 @@
     border-style: solid;
     border-width: 0 1px 1px 0;
     color: #666666;
+    vertical-align: middle;
 }
 
 .table tbody tr:hover {
@@ -28,9 +30,9 @@
 }
 
 th.index {
-    width: 3.5rem;
+    width: 3.25rem;
 }
 
 th.cb {
-    width: 3.5rem;
+    width: 3.25rem;
 }
