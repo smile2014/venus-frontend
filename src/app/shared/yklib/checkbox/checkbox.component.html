@@ -1,1 +1,5 @@
-<input type="checkbox" [disabled]="disabled" [checked]="checked"><span *ngIf="text">{{text}}</span>
+<input type="checkbox"
+       [disabled]="disabled"
+       [checked]="checked"
+       [(ngModel)]="value">
+<span *ngIf="text">{{text}}</span>

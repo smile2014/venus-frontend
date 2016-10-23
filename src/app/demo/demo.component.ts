@@ -50,5 +50,5 @@ export class DemoComponent {
       hobbit: '篮球',
       phone: '123123123123'
     }
-  ]
+  ];
 }

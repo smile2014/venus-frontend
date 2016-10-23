@@ -1,6 +1,7 @@
 .table td, .table th {
     line-height: 1;
     text-align: center;
+    padding: .6rem;
 }
 
 .table th {
@@ -30,9 +31,9 @@
 }
 
 th.index {
-    width: 3.25rem;
+    width: 3rem;
 }
 
 th.cb {
-    width: 3.25rem;
+    width: 3rem;
 }
