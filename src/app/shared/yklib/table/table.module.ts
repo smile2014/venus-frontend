@@ -4,18 +4,18 @@ import { CommonModule } from '@angular/common';
 import { CheckboxModule } from '../checkbox/checkbox.module';
 
 @NgModule({
-  declarations:[
-      TableComponent
+  declarations: [
+    TableComponent
   ],
-  imports:[
-      CommonModule,
-      CheckboxModule
+  imports: [
+    CommonModule,
+    CheckboxModule
   ],
-  exports:[
-      TableComponent
+  exports: [
+    TableComponent
   ]
 })
 
 export class TableModule {
-  
+
 }
