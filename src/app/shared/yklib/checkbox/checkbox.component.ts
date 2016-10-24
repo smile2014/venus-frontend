@@ -21,10 +21,11 @@ export class CheckboxComponent {
   @Output() change = new EventEmitter();
 
   constructor() {
+    this.checked = false;
   }
   
-  change(event:any) {
-    this.change = event;
+  _change(event:any) {
+    this.change.emit(this.checked);
   }
 
 }

@@ -53,6 +53,6 @@ export class DemoComponent {
   ];
 
   change(event:any) {
-    alert(event);
+    console.log(event);
   }
 }
