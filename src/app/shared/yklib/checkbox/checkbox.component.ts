@@ -5,7 +5,6 @@ import {
     EventEmitter
 } from '@angular/core';
 
-
 @Component({
   selector: 'yk-checkbox',
   templateUrl: './checkbox.component.html',
@@ -25,6 +24,7 @@ export class CheckboxComponent {
   }
   
   _change(event:any) {
+    this.checked = !this.checked;
     this.change.emit(this.checked);
   }
 
