@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { TableComponent } from './table.component';
 import { CommonModule } from '@angular/common';
 import { CheckboxModule } from '../checkbox/checkbox.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { CheckboxModule } from '../checkbox/checkbox.module';
   ],
   imports: [
     CommonModule,
-    CheckboxModule
+    CheckboxModule,
+    NgbModule.forRoot()
   ],
   exports: [
     TableComponent

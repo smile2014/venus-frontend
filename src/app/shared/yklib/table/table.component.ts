@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'yk-table',
@@ -6,19 +6,27 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 
-export class TableComponent {
+export class TableComponent implements OnInit {
   @Input() datas:any[];
   @Input() columns:any[];
   @Input() index:boolean;
   @Input() checkbox:boolean;
 
   selections:any[];
-
   isCheckAll:boolean;
+  tfootColspan:number;
 
   constructor() {
     this.isCheckAll = false;
     this.selections = [];
+  }
+
+  ngOnInit() {
+    if (this.index) {
+      this.tfootColspan = this.columns.length + 1;
+    } else {
+      this.tfootColspan = this.columns.length;
+    }
   }
 
   checkAll(isCheck:boolean) {

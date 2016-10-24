@@ -2,7 +2,7 @@
     <thead>
     <tr>
         <th *ngIf="checkbox" class="cb">
-            <yk-checkbox #ca (change)="checkAll(ca.checked)"></yk-checkbox>
+            <yk-checkbox #ca [checked]="isCheckAll" (change)="checkAll(ca.checked)"></yk-checkbox>
         </th>
         <th *ngIf="index" class="index">序号</th>
         <th *ngFor="let column of columns;let i = index;" [style.width]="column.width">{{column.title}}</th>
@@ -17,4 +17,14 @@
         <td *ngFor="let column of columns;let j = index;">{{data[columns[j].field]}}</td>
     </tr>
     </tbody>
+    <tfoot>
+    <tr>
+        <td *ngIf="checkbox" class="cb">
+            <yk-checkbox #ca [checked]="isCheckAll" (change)="checkAll(ca.checked)"></yk-checkbox>
+        </td>
+        <td [attr.colspan]="tfootColspan">
+            <ngb-pagination [collectionSize]="50" [(page)]="currentPage" size="sm"></ngb-pagination>
+        </td>
+    </tr>
+    </tfoot>
 </table>
