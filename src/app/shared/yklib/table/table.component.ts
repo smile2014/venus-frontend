@@ -23,7 +23,7 @@ export class TableComponent implements OnInit {
     this.isCheckAll = false;
     this.selections = [];
     this.currentPage = 1;
-    this.pageSize = 1;
+    this.pageSize = 10;
   }
 
   ngOnInit() {

@@ -24,9 +24,7 @@
         </td>
         <td [attr.colspan]="tfootColspan"
             [style.text-align]="'right'"
-            [style.padding]="'.35rem .6rem'"
-            [style.position]="'relative'">
-            <div class="paginationInfo">共有{{size}}条，每页{{pageSize}}条</div>
+            [style.padding]="'.35rem .6rem'">
             <ngb-pagination [collectionSize]="size"
                             [(page)]="currentPage"
                             size="sm"
@@ -35,8 +33,9 @@
                             [boundaryLinks]="true"
                             [pageSize]="pageSize"
                             [maxSize]="5"
-                            [style.display]="'inline-block'"
+                            [style.float]="'right'"
             ></ngb-pagination>
+            <div class="paginationInfo">共有{{size}}条，每页{{pageSize}}条</div>
         </td>
     </tr>
     </tfoot>

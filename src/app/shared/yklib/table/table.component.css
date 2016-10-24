@@ -39,8 +39,6 @@ th.cb {
 }
 
 .paginationInfo {
-    position: absolute;
-    display: inline-block;
-    right: 19rem;
-    top: .8rem;
+    float: right;
+    padding-top: .5rem;
 }
