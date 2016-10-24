@@ -37,3 +37,10 @@ th.index {
 th.cb {
     width: 3rem;
 }
+
+.paginationInfo {
+    position: absolute;
+    display: inline-block;
+    right: 19rem;
+    top: .8rem;
+}

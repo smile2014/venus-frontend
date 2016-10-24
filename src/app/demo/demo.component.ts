@@ -51,6 +51,30 @@ export class DemoComponent {
       age: '12',
       hobbit: '篮球',
       phone: '123123123123'
+    },
+    {
+      name: '太空',
+      age: '12',
+      hobbit: '篮球',
+      phone: '123123123123'
+    },
+    {
+      name: '太空',
+      age: '12',
+      hobbit: '篮球',
+      phone: '123123123123'
+    },
+    {
+      name: '太空',
+      age: '12',
+      hobbit: '篮球',
+      phone: '123123123123'
+    },
+    {
+      name: '太空',
+      age: '12',
+      hobbit: '篮球',
+      phone: '123123123123'
     }
   ];
 
