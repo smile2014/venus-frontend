@@ -18,21 +18,35 @@ export class TableComponent implements OnInit {
   currentPage:number;
   size:number;
   pageSize:number;
+  currentPageData:any[];
 
   constructor() {
     this.isCheckAll = false;
     this.selections = [];
+    this.currentPageData = [];
     this.currentPage = 1;
     this.pageSize = 10;
   }
 
   ngOnInit() {
+    this.setCurrentPageData();
+    this.setTfootColspan();
+    this.size = this.datas.length;
+  }
+
+  setCurrentPageData() {
+    let index = (this.currentPage - 1) * this.pageSize;
+    for (let i = index; i < this.pageSize; i++) {
+      this.currentPageData.push(this.datas[i]);
+    }
+  }
+
+  setTfootColspan() {
     if (this.index) {
       this.tfootColspan = this.columns.length + 1;
     } else {
       this.tfootColspan = this.columns.length;
     }
-    this.size = this.datas.length;
   }
 
   checkAll(isCheck:boolean) {
