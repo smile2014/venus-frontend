@@ -8,10 +8,11 @@
 <yk-button [type]="'link'" [text]="'link'"></yk-button>
 
 <h3>Checkbox</h3>
-<yk-checkbox [text]="'请选择我'"></yk-checkbox>
+<yk-checkbox [text]="'请选择我'" #ssss [(ngModel)]="test" [value]="'ddedede'"></yk-checkbox>
 <yk-checkbox [disabled]="true" [text]="'我是未选、失效的'"></yk-checkbox>
 <yk-checkbox [text]="'已选择我'" [checked]="true"></yk-checkbox>
 <yk-checkbox [disabled]="true" [text]="'我是已选、失效的'" [checked]="true"></yk-checkbox>
+<p>{{ssss.value}}</p>
 
 <h3>Table</h3>
 <yk-table [columns]="columns" [datas]="datas" [index]="true" [checkbox]="true"></yk-table>

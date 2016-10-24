@@ -51,4 +51,6 @@ export class DemoComponent {
       phone: '123123123123'
     }
   ];
+
+  test:any = 'testa';
 }
