@@ -15,10 +15,15 @@ export class TableComponent implements OnInit {
   selections:any[];
   isCheckAll:boolean;
   tfootColspan:number;
+  currentPage:number;
+  size:number;
+  pageSize:number;
 
   constructor() {
     this.isCheckAll = false;
     this.selections = [];
+    this.currentPage = 1;
+    this.pageSize = 1;
   }
 
   ngOnInit() {
@@ -27,6 +32,7 @@ export class TableComponent implements OnInit {
     } else {
       this.tfootColspan = this.columns.length;
     }
+    this.size = this.datas.length;
   }
 
   checkAll(isCheck:boolean) {

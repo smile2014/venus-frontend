@@ -9,6 +9,28 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, span, p {
     font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei" !important;
 }
 
+/* pagination */
 .pagination {
     margin: 0;
+    padding: 0;
+    border-radius: 0;
 }
+
+.pagination-sm>li:first-child>a, .pagination-sm>li:first-child>span {
+    border-radius: 0;
+}
+
+.pagination-sm>li>a, .pagination-sm>li>span {
+    padding: .5rem .75rem;
+    font-size: .75rem;
+    line-height: 1;
+}
+
+.pagination-sm>li:last-child>a, .pagination-sm>li:last-child>span {
+    border-radius: 0;
+}
+
+.pagination>li>a, .pagination>li>span {
+    border: none;
+}
+/* pagination */

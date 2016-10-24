@@ -22,8 +22,17 @@
         <td *ngIf="checkbox" class="cb">
             <yk-checkbox #ca [checked]="isCheckAll" (change)="checkAll(ca.checked)"></yk-checkbox>
         </td>
-        <td [attr.colspan]="tfootColspan">
-            <ngb-pagination [collectionSize]="50" [(page)]="currentPage" size="sm"></ngb-pagination>
+        <td [attr.colspan]="tfootColspan" [style.text-align]="'right'" [style.padding]="'.35rem .6rem'">
+            <div [style.display]="'inline-block'">共有{{size}}条，每页{{pageSize}}条</div>
+            <ngb-pagination [collectionSize]="size"
+                            [(page)]="currentPage"
+                            size="sm"
+                            [rotate]="true"
+                            [ellipses]="true"
+                            [boundaryLinks]="true"
+                            [pageSize]="pageSize"
+                            [style.display]="'inline-block'"
+            ></ngb-pagination>
         </td>
     </tr>
     </tfoot>
