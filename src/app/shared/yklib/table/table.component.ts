@@ -25,7 +25,7 @@ export class TableComponent implements OnInit {
     this.selections = [];
     this.currentPageData = [];
     this.currentPage = 1;
-    this.pageSize = 10;
+    this.pageSize = 1;
   }
 
   ngOnInit() {
@@ -35,8 +35,9 @@ export class TableComponent implements OnInit {
   }
 
   setCurrentPageData() {
+    this.currentPageData = [];
     let index = (this.currentPage - 1) * this.pageSize;
-    for (let i = index; i < this.pageSize; i++) {
+    for (let i = index; i < this.currentPage * this.pageSize; i++) {
       this.currentPageData.push(this.datas[i]);
     }
   }
@@ -75,5 +76,10 @@ export class TableComponent implements OnInit {
 
   getSelections() {
     return this.selections;
+  }
+
+  pageChange(event:any) {
+    this.currentPage = event;
+    this.setCurrentPageData();
   }
 }

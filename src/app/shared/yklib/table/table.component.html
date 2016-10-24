@@ -9,7 +9,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let data of datas;let i = index">
+    <tr *ngFor="let data of currentPageData;let i = index">
         <td *ngIf="checkbox">
             <yk-checkbox [checked]="isCheckAll" #cb (change)="check(i, cb.checked)"></yk-checkbox>
         </td>
@@ -34,6 +34,7 @@
                             [pageSize]="pageSize"
                             [maxSize]="5"
                             [style.float]="'right'"
+                            (pageChange)="pageChange($event)"
             ></ngb-pagination>
             <div class="paginationInfo">共有{{size}}条，每页{{pageSize}}条</div>
         </td>
