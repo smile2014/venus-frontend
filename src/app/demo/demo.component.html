@@ -15,4 +15,7 @@
 <p>{{ykCb.checked}}</p>
 
 <h3>Table</h3>
-<yk-table [columns]="columns" [datas]="datas" [index]="true" [checkbox]="true"></yk-table>
+<yk-table #ykTable [columns]="columns" [datas]="datas" [index]="true" [checkbox]="true"></yk-table>
+<yk-button [type]="'primary'" [text]="'获取已选数据'" (click)="getSelections()"></yk-button>
+<p>{{selections}}</p>
+

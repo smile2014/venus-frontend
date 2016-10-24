@@ -2,7 +2,7 @@
     <thead>
     <tr>
         <th *ngIf="checkbox" class="cb">
-            <yk-checkbox></yk-checkbox>
+            <yk-checkbox #ca (change)="checkAll(ca.checked)"></yk-checkbox>
         </th>
         <th *ngIf="index" class="index">序号</th>
         <th *ngFor="let column of columns;let i = index;" [style.width]="column.width">{{column.title}}</th>
@@ -11,7 +11,7 @@
     <tbody>
     <tr *ngFor="let data of datas;let i = index">
         <td *ngIf="checkbox">
-            <yk-checkbox></yk-checkbox>
+            <yk-checkbox [checked]="isCheckAll" #cb (change)="check(i, cb.checked)"></yk-checkbox>
         </td>
         <td *ngIf="index">{{i + 1}}</td>
         <td *ngFor="let column of columns;let j = index;">{{data[columns[j].field]}}</td>

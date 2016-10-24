@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 
 @Component({
   templateUrl: './demo.component.html',
@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
 })
 
 export class DemoComponent {
+  @ViewChild('ykTable') ykTable:any;
+  selections:string;
   columns:any[] = [
     {
       title: '姓名',
@@ -54,5 +56,9 @@ export class DemoComponent {
 
   change(event:any) {
     console.log(event);
+  }
+
+  getSelections() {
+    this.selections = JSON.stringify(this.ykTable.getSelections());
   }
 }

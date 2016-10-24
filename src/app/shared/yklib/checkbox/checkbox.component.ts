@@ -24,6 +24,7 @@ export class CheckboxComponent {
   }
   
   _change(event:any) {
+    event.stopPropagation();
     this.checked = !this.checked;
     this.change.emit(this.checked);
   }
