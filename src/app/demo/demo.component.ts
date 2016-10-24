@@ -52,5 +52,7 @@ export class DemoComponent {
     }
   ];
 
-  test:any = 'testa';
+  change(event:any) {
+    alert(event);
+  }
 }

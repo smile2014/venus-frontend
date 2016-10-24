@@ -1,7 +1,8 @@
 import {
     Component,
     Input,
-    Output
+    Output,
+    EventEmitter
 } from '@angular/core';
 
 
@@ -17,9 +18,13 @@ export class CheckboxComponent {
   @Input() text:string;
   @Input() checked:boolean;
   @Input() value:any;
-  @Output() 
+  @Output() change = new EventEmitter();
 
   constructor() {
+  }
+  
+  change(event:any) {
+    this.change = event;
   }
 
 }
