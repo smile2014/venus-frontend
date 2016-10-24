@@ -1,3 +1,7 @@
+label {
+    cursor: pointer;
+}
+
 input[type="checkbox"] {
     -webkit-appearance: none;
     background-size: 16px 16px;
@@ -9,6 +13,7 @@ input[type="checkbox"] {
     outline: none;
     vertical-align: bottom;
     margin-top: 0;
+    cursor: pointer;
 }
 
 input[type="checkbox"]:hover {
@@ -27,19 +32,19 @@ input[type="checkbox"]:checked {
     border: none;
 }
 
-span {
-    padding: 0 .25rem;
-    line-height: 1.25;
-}
-
 input[type="checkbox"]:disabled, input[type="checkbox"]:disabled:hover {
-    background-image: none;
-    background-color: #eeeeee;
-    border: 1px solid #dddddd;
+    background-image: url("public/images/icon_select_disabled.png");
+    outline: none;
+    border: none;
 }
 
 input[type="checkbox"]:disabled:checked, input[type="checkbox"]:disabled:checked:hover {
-    background-image: url("public/images/icon_select_selected.png");
+    background-image: url("public/images/icon_select_disabled_checked.png");
     outline: none;
     border: none;
+}
+
+span {
+    padding: 0 .25rem;
+    line-height: 1.25;
 }

@@ -1,7 +1,9 @@
-<input type="checkbox"
-       [disabled]="disabled"
-       [checked]="checked"
-       [name]="name"
-       [value]="value"
-       >
-<span *ngIf="text">{{text}}</span>
+<label>
+    <input type="checkbox"
+           [disabled]="disabled"
+           [checked]="checked"
+           [name]="name"
+           [value]="value"
+           (change)="change($event)">
+    <span *ngIf="text">{{text}}</span>
+</label>
