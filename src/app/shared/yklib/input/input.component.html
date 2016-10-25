@@ -1,4 +1,7 @@
-<div class="yk-input-wrapper">
-    <input class="yk-input" [class.hint]="showHint">
+<div class="yk-input-all">
+    <div class="yk-input-wrapper">
+        <label [style.width]="labelWidth">{{label}}</label>
+        <input class="yk-input" [class.hint]="showHint">
+    </div>
+    <div *ngIf="showHint" [style.margin-left]="labelWidth" class="yk-input-hint">验证有问题！</div>
 </div>
-<div *ngIf="showHint" class="yk-input-hint"></div>

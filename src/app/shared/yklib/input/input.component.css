@@ -15,10 +15,21 @@
 }
 
 .hint {
-    border-color: rgb(221,75,57);
+    border-color: rgb(221, 75, 57);
 }
 
 .yk-input-hint {
-    color: rgb(221,75,57);
+    color: rgb(221, 75, 57);
     margin-top: .2rem;
+    margin-left: 5.2rem;
+}
+
+.yk-input-wrapper label {
+    width: 5rem;
+    text-align: right;
+    padding-right: .5rem;
+}
+
+.yk-input-all {
+    margin-bottom: 1rem;
 }

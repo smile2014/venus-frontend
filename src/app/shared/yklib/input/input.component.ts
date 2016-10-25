@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'yk-input',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class InputComponent {
+  @Input() label:string;
+  @Input() labelWidth:string;
   showHint:boolean = false;
 }
