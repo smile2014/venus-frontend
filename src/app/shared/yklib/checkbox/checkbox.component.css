@@ -44,8 +44,3 @@ input[type="checkbox"]:disabled:checked, input[type="checkbox"]:disabled:checked
     outline: none;
     border: none;
 }
-
-span {
-    padding: 0 .25rem;
-    line-height: 1.25;
-}

@@ -28,5 +28,4 @@ export class CheckboxComponent {
     this.checked = !this.checked;
     this.change.emit(this.checked);
   }
-
 }

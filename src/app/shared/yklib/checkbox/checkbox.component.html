@@ -5,5 +5,5 @@
            [name]="name"
            [value]="value"
            (change)="_change($event)">
-    <span *ngIf="text">{{text}}</span>
+    <ng-content></ng-content>
 </label>

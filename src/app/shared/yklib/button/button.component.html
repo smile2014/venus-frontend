@@ -1,1 +1,4 @@
-<button type="button" [ngClass]="setClass()"><i *ngIf="i"  [ngClass]="setIClass()"></i>{{text}}</button>
+<button type="button" [ngClass]="setClass()">
+    <i *ngIf="i"  [ngClass]="setIClass()"></i>
+    <ng-content></ng-content>
+</button>

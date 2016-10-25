@@ -1,21 +1,21 @@
 <h3>Button</h3>
-<yk-button [type]="'primary'" [text]="'primary'"></yk-button>
-<yk-button [type]="'secondary'" [text]="'secondary'"></yk-button>
-<yk-button [type]="'success'" [text]="'创建'" [i]="'plus'"></yk-button>
-<yk-button [type]="'info'" [text]="'info'"></yk-button>
-<yk-button [type]="'warning'" [text]="'warning'"></yk-button>
-<yk-button [type]="'danger'" [text]="'danger'"></yk-button>
-<yk-button [type]="'link'" [text]="'link'"></yk-button>
+<yk-button [type]="'primary'">primary</yk-button>
+<yk-button [type]="'secondary'">secondary</yk-button>
+<yk-button [type]="'success'" [i]="'plus'">创建</yk-button>
+<yk-button [type]="'info'">info</yk-button>
+<yk-button [type]="'warning'">warning</yk-button>
+<yk-button [type]="'danger'">danger</yk-button>
+<yk-button [type]="'link'">link</yk-button>
 
 <h3>Checkbox</h3>
-<yk-checkbox [text]="'请选择我'" #ykCb [value]="'dedede'" (change)="change($event)"></yk-checkbox>
-<yk-checkbox [disabled]="true" [text]="'我是未选、失效的'"></yk-checkbox>
-<yk-checkbox [text]="'已选择我'" [checked]="true"></yk-checkbox>
-<yk-checkbox [disabled]="true" [text]="'我是已选、失效的'" [checked]="true"></yk-checkbox>
+<yk-checkbox #ykCb [value]="'dedede'" (change)="change($event)">请选择我</yk-checkbox>
+<yk-checkbox [disabled]="true">我是未选、失效的</yk-checkbox>
+<yk-checkbox [checked]="true">已选择我</yk-checkbox>
+<yk-checkbox [disabled]="true" [checked]="true">我是已选、失效的</yk-checkbox>
 <p>{{ykCb.checked}}</p>
 
 <h3>Table</h3>
 <yk-table #ykTable [columns]="columns" [datas]="datas" [index]="true" [checkbox]="true"></yk-table>
-<yk-button [type]="'primary'" [text]="'获取已选数据'" (click)="getSelections()"></yk-button>
+<yk-button [type]="'primary'" (click)="getSelections()">获取已选数据</yk-button>
 <p>{{selections}}</p>
 
