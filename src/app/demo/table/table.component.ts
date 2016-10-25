@@ -37,7 +37,6 @@ export class TableComponent implements OnInit {
   ngOnInit() {
     this.tableService.getData().subscribe(
         (res:any)=> {
-          console.log(res);
           this.datas = res;
         },
         (error:any)=> {
