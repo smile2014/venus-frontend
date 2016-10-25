@@ -11,5 +11,5 @@
 
 .yk-input:focus {
     border-color: #1898eb;
-    color: #1898eb;
+    outline: none;
 }
