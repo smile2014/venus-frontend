@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { fullRouting } from '../main/full.routing';
 import { ClassComponent } from './class.component';
 
 @NgModule({
@@ -7,7 +6,6 @@ import { ClassComponent } from './class.component';
     ClassComponent
   ],
   imports: [
-    fullRouting
   ],
   exports: [
     ClassComponent

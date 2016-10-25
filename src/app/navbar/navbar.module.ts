@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { NavbarComponent } from './navbar.component';
-import { fullRouting } from '../main/full.routing';
+import { FullRoutingModule } from '../main/full-routing.module';
 
 @NgModule({
   declarations: [
     NavbarComponent
   ],
   imports: [
-    fullRouting
+    FullRoutingModule
   ],
-  providers: [],
   exports: [
     NavbarComponent
   ]

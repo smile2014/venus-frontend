@@ -1,16 +1,15 @@
 import { NgModule } from '@angular/core';
 
 import { SidebarComponent } from './sidebar.component';
-import { fullRouting } from '../main/full.routing';
+import { FullRoutingModule } from '../main/full-routing.module';
 
 @NgModule({
   declarations: [
     SidebarComponent
   ],
   imports: [
-    fullRouting
+      FullRoutingModule
   ],
-  providers: [],
   exports: [
     SidebarComponent
   ]

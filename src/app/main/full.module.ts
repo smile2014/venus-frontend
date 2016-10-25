@@ -7,9 +7,9 @@ import { NavbarModule } from '../navbar/navbar.module';
 import { SidebarModule } from '../sidebar/sidebar.module';
 
 import { FullComponent } from './full.component';
-import { fullRouting } from './full.routing';
 import { ClassModule } from '../class/class.module';
 import { DemoModule } from '../demo/demo.module';
+import { FullRoutingModule } from './full-routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import { DemoModule } from '../demo/demo.module';
   imports: [
     SharedModule,
     NgbModule.forRoot(),
-    fullRouting,
+    FullRoutingModule,
     NavbarModule,
     DemoModule,
     SidebarModule,
