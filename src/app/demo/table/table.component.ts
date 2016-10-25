@@ -27,80 +27,11 @@ export class TableComponent {
     }
   ];
 
-  datas:any[] = [
-    {
-      name: '杨恺',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '小红',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '小明',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '太空',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '太空',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '太空',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '太空',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '太空',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '太空',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '太空',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '太空',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    },
-    {
-      name: '太空',
-      age: '12',
-      hobbit: '篮球',
-      phone: '123123123123'
-    }
-  ];
+  datas:any[];
+
+  constructor() {
+    this.datas = [];
+  }
 
   getSelections() {
     this.selections = JSON.stringify(this.ykTable.getSelections());
