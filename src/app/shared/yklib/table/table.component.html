@@ -17,8 +17,8 @@
         <td *ngFor="let column of columns;">{{data[column?.field]}}</td>
     </tr>
     </tbody>
-    <tfoot *ngIf="hasData">
-    <tr>
+    <tfoot>
+    <tr *ngIf="hasData">
         <td *ngIf="checkbox" class="cb">
             <yk-checkbox #ca [checked]="isCheckAll" (change)="checkAll(ca.checked)"></yk-checkbox>
         </td>
@@ -38,6 +38,9 @@
             ></ngb-pagination>
             <div class="paginationInfo">共有{{size}}条，每页{{pageSize}}条</div>
         </td>
+    </tr>
+    <tr *ngIf="!hasData">
+        <td [attr.colspan]="noDataColspan" [style.background-color]="'inherit'">没有找到匹配的记录</td>
     </tr>
     </tfoot>
 </table>

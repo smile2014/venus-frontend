@@ -15,6 +15,7 @@ export class TableComponent implements OnInit {
   selections:any[];
   isCheckAll:boolean;
   tfootColspan:number;
+  noDataColspan:number;
   currentPage:number;
   size:number;
   pageSize:number;
@@ -34,6 +35,7 @@ export class TableComponent implements OnInit {
     this.setSize();
     this.setCurrentPageData();
     this.setTfootColspan();
+    this.setNoDataColspan();
   }
 
   setCurrentPageData() {
@@ -55,6 +57,18 @@ export class TableComponent implements OnInit {
       this.tfootColspan = this.columns.length + 1;
     } else {
       this.tfootColspan = this.columns.length;
+    }
+  }
+
+  setNoDataColspan() {
+    if (this.index && this.checkbox) {
+      this.noDataColspan = this.columns.length + 2;
+    }
+    if ((this.index && !this.checkbox) || (!this.index && this.checkbox)) {
+      this.noDataColspan = this.columns.length + 1;
+    }
+    if (!this.index && !this.checkbox) {
+      this.noDataColspan = this.columns.length;
     }
   }
 
