@@ -31,9 +31,9 @@ export class TableComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.setSize();
     this.setCurrentPageData();
     this.setTfootColspan();
-    this.setSize();
   }
 
   setCurrentPageData() {

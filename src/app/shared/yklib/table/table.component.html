@@ -14,7 +14,7 @@
             <yk-checkbox [checked]="isCheckAll" #cb (change)="check(i, cb.checked)"></yk-checkbox>
         </td>
         <td *ngIf="index">{{i + 1}}</td>
-        <td *ngFor="let column of columns;">{{data? data[column?.field]:null}}</td>
+        <td *ngFor="let column of columns;">{{data[column?.field]}}</td>
     </tr>
     </tbody>
     <tfoot *ngIf="hasData">
