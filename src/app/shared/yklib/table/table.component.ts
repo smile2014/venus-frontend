@@ -37,7 +37,13 @@ export class TableComponent implements OnInit {
   setCurrentPageData() {
     this.currentPageData = [];
     let index = (this.currentPage - 1) * this.pageSize;
-    for (let i = index; (i < this.currentPage * this.pageSize) && (i < this.size); i++) {
+    let length = 0;
+    if (this.size < this.currentPage * this.pageSize) {
+      length = this.size;
+    } else {
+      length = this.currentPage * this.pageSize;
+    }
+    for (let i = index; i < length; i++) {
       this.currentPageData.push(this.datas[i]);
     }
   }
