@@ -1,11 +1,12 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
+import { TableService } from './table.service';
 
 @Component({
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.css']
 })
 
-export class TableComponent {
+export class TableComponent implements OnInit {
   @ViewChild('ykTable') ykTable:any;
   selections:string;
   columns:any[] = [
@@ -29,8 +30,20 @@ export class TableComponent {
 
   datas:any[];
 
-  constructor() {
+  constructor(private tableService:TableService) {
     this.datas = [];
+  }
+
+  ngOnInit() {
+    this.tableService.getData().subscribe(
+        (res:any)=> {
+          console.log(res);
+          this.datas = res;
+        },
+        (error:any)=> {
+          console.log(error);
+        }
+    );
   }
 
   getSelections() {

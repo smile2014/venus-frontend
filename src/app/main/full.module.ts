@@ -10,6 +10,7 @@ import { FullComponent } from './full.component';
 import { ClassModule } from '../class/class.module';
 import { DemoModule } from '../demo/demo.module';
 import { FullRoutingModule } from './full-routing.module';
+import { HttpService } from '../util/http.service';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,9 @@ import { FullRoutingModule } from './full-routing.module';
     DemoModule,
     SidebarModule,
     ClassModule
+  ],
+  providers:[
+      HttpService
   ]
 })
 

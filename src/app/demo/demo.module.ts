@@ -4,6 +4,7 @@ import { DemoComponent } from './demo.component';
 import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { TableComponent } from './table/table.component';
+import { TableService } from './table/table.service';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,9 @@ import { TableComponent } from './table/table.component';
   ],
   imports: [
     SharedModule
+  ],
+  providers:[
+    TableService
   ],
   exports: [
     DemoComponent

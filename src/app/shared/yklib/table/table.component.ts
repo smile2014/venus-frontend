@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'yk-table',
@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./table.component.css']
 })
 
-export class TableComponent implements OnInit {
+export class TableComponent implements OnChanges {
   @Input() datas:any[];
   @Input() columns:any[];
   @Input() index:boolean;
@@ -31,7 +31,7 @@ export class TableComponent implements OnInit {
     this.hasData = false;
   }
 
-  ngOnInit() {
+  ngOnChanges() {
     this.setSize();
     this.setCurrentPageData();
     this.setTfootColspan();
