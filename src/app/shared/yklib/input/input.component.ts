@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class InputComponent {
-
+  showHint:boolean = false;
 }

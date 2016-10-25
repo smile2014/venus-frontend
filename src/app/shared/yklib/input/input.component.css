@@ -1,8 +1,8 @@
 .yk-input {
     width: 20rem;
-    padding: .44rem;
+    padding: .45rem;
     border: 1px solid #dddddd;
-    border-radius: 2px;
+    border-radius: 0;
     outline: none;
     box-shadow: none;
     font-weight: normal;
@@ -12,4 +12,13 @@
 .yk-input:focus {
     border-color: #1898eb;
     outline: none;
+}
+
+.hint {
+    border-color: rgb(221,75,57);
+}
+
+.yk-input-hint {
+    color: rgb(221,75,57);
+    margin-top: .2rem;
 }

@@ -1,6 +1,4 @@
-<label class="yk-input-label">
-    <div class="yk-input-wrapper">
-        <input class="yk-input">
-    </div>
-    <div class="yk-input-hint"></div>
-</label>
+<div class="yk-input-wrapper">
+    <input class="yk-input" [class.hint]="showHint">
+</div>
+<div *ngIf="showHint" class="yk-input-hint"></div>
