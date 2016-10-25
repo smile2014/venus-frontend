@@ -19,6 +19,7 @@ export class TableComponent implements OnInit {
   size:number;
   pageSize:number;
   currentPageData:any[];
+  hasData:boolean;
 
   constructor() {
     this.isCheckAll = false;
@@ -26,12 +27,13 @@ export class TableComponent implements OnInit {
     this.currentPageData = [];
     this.currentPage = 1;
     this.pageSize = 10;
+    this.hasData = false;
   }
 
   ngOnInit() {
     this.setCurrentPageData();
     this.setTfootColspan();
-    this.size = this.datas.length;
+    this.setSize();
   }
 
   setCurrentPageData() {
@@ -53,6 +55,15 @@ export class TableComponent implements OnInit {
       this.tfootColspan = this.columns.length + 1;
     } else {
       this.tfootColspan = this.columns.length;
+    }
+  }
+
+  setSize() {
+    this.size = this.datas.length;
+    if (this.size > 0) {
+      this.hasData = true;
+    } else {
+      this.hasData = false;
     }
   }
 
