@@ -1,15 +1,1 @@
 <router-outlet></router-outlet>
-
-
-<h3>Checkbox</h3>
-<yk-checkbox #ykCb [value]="'dedede'" (change)="change($event)">请选择我</yk-checkbox>
-<yk-checkbox [disabled]="true">我是未选、失效的</yk-checkbox>
-<yk-checkbox [checked]="true">已选择我</yk-checkbox>
-<yk-checkbox [disabled]="true" [checked]="true">我是已选、失效的</yk-checkbox>
-<p>{{ykCb.checked}}</p>
-
-<h3>Table</h3>
-<yk-table #ykTable [columns]="columns" [datas]="datas" [index]="true" [checkbox]="true"></yk-table>
-<yk-button [type]="'primary'" (click)="getSelections()">获取已选数据</yk-button>
-<p>{{selections}}</p>
-
