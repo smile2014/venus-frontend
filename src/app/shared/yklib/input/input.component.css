@@ -1,0 +1,15 @@
+.yk-input {
+    width: 20rem;
+    padding: .44rem;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+    font-weight: normal;
+    color: #333333;
+}
+
+.yk-input:focus {
+    border-color: #1898eb;
+    color: #1898eb;
+}
