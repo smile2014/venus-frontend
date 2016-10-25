@@ -6,6 +6,7 @@ import { ClassComponent } from '../class/class.component';
 import { ButtonComponent } from '../demo/button/button.component';
 import { CheckboxComponent } from '../demo/checkbox/checkbox.component';
 import { TableComponent } from '../demo/table/table.component';
+import { InputComponent } from '../demo/input/input.component';
 
 const routes:any = [
   {
@@ -40,6 +41,10 @@ const routes:any = [
           {
             path: 'table',
             component: TableComponent
+          },
+          {
+            path: 'input',
+            component: InputComponent
           }
         ]
       },

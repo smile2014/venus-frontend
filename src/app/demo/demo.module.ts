@@ -5,13 +5,15 @@ import { ButtonComponent } from './button/button.component';
 import { CheckboxComponent } from './checkbox/checkbox.component';
 import { TableComponent } from './table/table.component';
 import { TableService } from './table/table.service';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
     DemoComponent,
     ButtonComponent,
     CheckboxComponent,
-    TableComponent
+    TableComponent,
+    InputComponent
   ],
   imports: [
     SharedModule
