@@ -25,7 +25,7 @@ export class TableComponent implements OnInit {
     this.selections = [];
     this.currentPageData = [];
     this.currentPage = 1;
-    this.pageSize = 1;
+    this.pageSize = 2;
   }
 
   ngOnInit() {
@@ -54,19 +54,19 @@ export class TableComponent implements OnInit {
     this.isCheckAll = isCheck;
     this.selections = [];
     if (isCheck) {
-      for (let i = 0; i < this.datas.length; i++) {
-        this.selections.push(this.datas[i]);
+      for (let i = 0; i < this.currentPageData.length; i++) {
+        this.selections.push(this.currentPageData[i]);
       }
     }
   }
 
   check(i:number, isCheck:boolean) {
     if (isCheck) {
-      this.selections.push(this.datas[i]);
+      this.selections.push(this.currentPageData[i]);
     } else {
       let index:number;
       for (let j = 0; j < this.selections.length; j++) {
-        if (this.datas[i] === this.selections[j]) {
+        if (this.currentPageData[i] === this.selections[j]) {
           index = j;
         }
       }
@@ -79,7 +79,9 @@ export class TableComponent implements OnInit {
   }
 
   pageChange(event:any) {
+    this.isCheckAll = false;
     this.currentPage = event;
+    this.selections = [];
     this.setCurrentPageData();
   }
 }
