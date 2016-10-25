@@ -41,4 +41,13 @@ th.cb {
 .paginationInfo {
     float: right;
     padding-top: .5rem;
+    padding-right: 1rem;
+}
+
+.table tfoot td {
+    background-color: #eeeeee;
+    font-weight: normal;
+    color: #333333;
+    border: solid 1px #e6e6e6;
+    vertical-align: middle;
 }
