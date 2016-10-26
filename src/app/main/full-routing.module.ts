@@ -7,6 +7,7 @@ import { ButtonComponent } from '../demo/button/button.component';
 import { CheckboxComponent } from '../demo/checkbox/checkbox.component';
 import { TableComponent } from '../demo/table/table.component';
 import { InputComponent } from '../demo/input/input.component';
+import { ModalComponent } from '../demo/modal/modal.component';
 
 const routes:any = [
   {
@@ -45,6 +46,10 @@ const routes:any = [
           {
             path: 'input',
             component: InputComponent
+          },
+          {
+            path: 'modal',
+            component: ModalComponent
           }
         ]
       },

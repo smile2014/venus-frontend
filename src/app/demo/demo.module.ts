@@ -6,6 +6,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { TableComponent } from './table/table.component';
 import { TableService } from './table/table.service';
 import { InputComponent } from './input/input.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,13 @@ import { InputComponent } from './input/input.component';
     ButtonComponent,
     CheckboxComponent,
     TableComponent,
-    InputComponent
+    InputComponent,
+    ModalComponent
   ],
   imports: [
     SharedModule
   ],
-  providers:[
+  providers: [
     TableService
   ],
   exports: [

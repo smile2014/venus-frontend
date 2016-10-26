@@ -2,6 +2,7 @@
     font-weight: normal;
     font-size: .75rem;
     padding: .6rem 1.35rem;
+    min-width: 6rem;
     line-height: 1;
     border-radius: 0;
     outline: none;
