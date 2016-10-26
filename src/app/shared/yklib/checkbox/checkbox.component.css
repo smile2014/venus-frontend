@@ -37,10 +37,12 @@ input[type="checkbox"]:disabled, input[type="checkbox"]:disabled:hover {
     background-image: url("public/images/icon_select_disabled.png");
     outline: none;
     border: none;
+    cursor: default;
 }
 
 input[type="checkbox"]:disabled:checked, input[type="checkbox"]:disabled:checked:hover {
     background-image: url("public/images/icon_select_disabled_checked.png");
     outline: none;
     border: none;
+    cursor: not-allowed;
 }
