@@ -1,6 +1,6 @@
 label {
     cursor: pointer;
-    margin: 0;
+    margin: 0 .75rem .75rem 0;
 }
 
 label.dis {
@@ -49,4 +49,9 @@ input[type="checkbox"]:disabled:checked, input[type="checkbox"]:disabled:checked
     outline: none;
     border: none;
     cursor: not-allowed;
+}
+
+.cb-content {
+    display: inline-block;
+    margin-bottom: .15rem;
 }
