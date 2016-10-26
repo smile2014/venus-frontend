@@ -1,3 +1,6 @@
 <ngb-alert *ngIf="isShow || alwaysShow" [type]="type" [class.fixed]="fixed" [dismissible]="false" (close)="_close($event)">
+    <button type="button" class="close">
+        <span>&times;</span>
+    </button>
     <ng-content></ng-content>
 </ngb-alert>
