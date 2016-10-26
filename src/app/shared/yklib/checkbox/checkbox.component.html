@@ -2,10 +2,7 @@
     <input type="checkbox"
            [disabled]="disabled"
            [checked]="checked"
-           [name]="name"
            [value]="value"
            (change)="_change($event)">
-    <div class="cb-content">
-        <ng-content></ng-content>
-    </div>
+    <ng-content></ng-content>
 </label>
