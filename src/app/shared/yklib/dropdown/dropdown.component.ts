@@ -12,6 +12,7 @@ export class DropdownComponent {
   @Input() text:string;
   @Input() open:boolean;
   @Input() autoClose:boolean;
+  @Input() type:string;
   @Output() openChange = new EventEmitter();
 
   constructor() {
@@ -19,6 +20,11 @@ export class DropdownComponent {
     this.text = '';
     this.autoClose = true;
     this.open = false;
+    this.type = 'primary-outline';
+  }
+
+  setClass() {
+    return 'btn btn-' + this.type;
   }
 
   isOpen() {

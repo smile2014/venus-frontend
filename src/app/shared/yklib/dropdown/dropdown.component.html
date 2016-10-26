@@ -1,5 +1,5 @@
 <div #myDropdown="ngbDropdown" ngbDropdown class="inline-block" [up]="up" [autoClose]="autoClose" [open]="open" (openChange)="_openChange($event)">
-    <button class="btn btn-primary-outline" id="dropdownMenu1" ngbDropdownToggle>{{text}}</button>
+    <button [ngClass]="setClass()" id="dropdownMenu1" ngbDropdownToggle>{{text}}</button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
         <ng-content></ng-content>
     </div>
