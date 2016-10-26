@@ -80,7 +80,7 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, span, p {
     border-radius: 0;
 }
 
-.alert-danger {
+/*.alert-danger {
     color: #ffffff;
     background-color: #d9534f;
     border-color: #d9534f;
@@ -102,6 +102,6 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, span, p {
     color: #ffffff;
     background-color: #5bc0de;
     border-color: #5bc0de;
-}
+}*/
 
 /* alert */
