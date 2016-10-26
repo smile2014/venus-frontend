@@ -1,3 +1,3 @@
-<ngb-alert *ngIf="isShow" [dismissible]="false" (close)="_close($event)">
+<ngb-alert *ngIf="isShow || alwaysShow" [type]="type" [class.fixed]="fixed" [dismissible]="false" (close)="_close($event)">
     <ng-content></ng-content>
 </ngb-alert>
