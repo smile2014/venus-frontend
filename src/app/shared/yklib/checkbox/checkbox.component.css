@@ -44,3 +44,8 @@ input[type="checkbox"]:disabled:checked, input[type="checkbox"]:disabled:checked
     outline: none;
     border: none;
 }
+
+.cb-content {
+    display: inline-block;
+    padding-bottom: .15rem;
+}
