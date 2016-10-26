@@ -1,8 +1,6 @@
 <div ngbDropdown class="inline-block" [up]="up">
     <button class="btn btn-primary-outline" id="dropdownMenu1" ngbDropdownToggle>{{text}}</button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-        <button class="dropdown-item">Action - 1</button>
-        <button class="dropdown-item">Another Action</button>
-        <button class="dropdown-item">Something else is here</button>
+        <ng-content></ng-content>
     </div>
 </div>

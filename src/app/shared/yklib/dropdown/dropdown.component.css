@@ -15,3 +15,9 @@
 .inline-block {
     display: inline-block;
 }
+
+.dropdown-menu {
+    min-width: 10rem;
+    border-radius: 0;
+    font-size: .75rem;
+}
