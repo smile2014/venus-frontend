@@ -1,6 +1,6 @@
 <div #myDropdown="ngbDropdown" ngbDropdown class="inline-block" [up]="up" [autoClose]="autoClose" [open]="open" (openChange)="_openChange($event)">
     <button [ngClass]="setClass()" ngbDropdownToggle>{{text}}</button>
-    <div class="dropdown-menu">
+    <div class="dropdown-menu" [class.dropdown-menu-right]="up">
         <ng-content></ng-content>
     </div>
 </div>
