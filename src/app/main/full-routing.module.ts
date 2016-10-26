@@ -10,6 +10,7 @@ import { InputComponent } from '../demo/input/input.component';
 import { ModalComponent } from '../demo/modal/modal.component';
 import { AlertComponent } from '../demo/alert/alert.component';
 import { DropdownComponent } from '../demo/dropdown/dropdown.component';
+import { RadioComponent } from '../demo/radio/radio.component';
 
 const routes:any = [
   {
@@ -60,6 +61,10 @@ const routes:any = [
           {
             path: 'dropdown',
             component: DropdownComponent
+          },
+          {
+            path: 'radio',
+            component: RadioComponent
           }
         ]
       },

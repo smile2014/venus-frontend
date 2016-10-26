@@ -6,6 +6,7 @@ import { InputModule } from './input/input.module';
 import { ModalModule } from './modal/modal.module';
 import { AlertModule } from './alert/alert.module';
 import { DropdownModule } from './dropdown/dropdown.module';
+import { RadioModule } from './radio/radio.module';
 
 const module = [
   ButtonModule,
@@ -14,7 +15,8 @@ const module = [
   InputModule,
   ModalModule,
   AlertModule,
-  DropdownModule
+  DropdownModule,
+  RadioModule
 ];
 
 @NgModule({
