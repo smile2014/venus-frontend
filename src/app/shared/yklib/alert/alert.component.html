@@ -1,1 +1,3 @@
-dfsfdfsdf
+<ngb-alert *ngIf="isShow" [dismissible]="false" (close)="_close($event)">
+    <ng-content></ng-content>
+</ngb-alert>

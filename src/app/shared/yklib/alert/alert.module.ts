@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AlertComponent } from './alert.component';
 
 @NgModule({
@@ -7,6 +8,7 @@ import { AlertComponent } from './alert.component';
     AlertComponent
   ],
   imports: [
+    NgbModule.forRoot(),
     CommonModule
   ],
   exports: [
