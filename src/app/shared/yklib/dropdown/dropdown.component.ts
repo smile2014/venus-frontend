@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'yk-dropdown',
@@ -7,5 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class DropdownComponent {
+  @Input() up:boolean;
+  @Input() text:string;
 
+  constructor() {
+    this.up = false;
+    this.text = '';
+  }
 }
