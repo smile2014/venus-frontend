@@ -8,6 +8,7 @@ import { TableService } from './table/table.service';
 import { InputComponent } from './input/input.component';
 import { ModalComponent } from './modal/modal.component';
 import { AlertComponent } from './alert/alert.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { AlertComponent } from './alert/alert.component';
     TableComponent,
     InputComponent,
     ModalComponent,
-    AlertComponent
+    AlertComponent,
+    DropdownComponent
   ],
   imports: [
     SharedModule

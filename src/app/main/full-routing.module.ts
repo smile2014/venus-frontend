@@ -9,6 +9,7 @@ import { TableComponent } from '../demo/table/table.component';
 import { InputComponent } from '../demo/input/input.component';
 import { ModalComponent } from '../demo/modal/modal.component';
 import { AlertComponent } from '../demo/alert/alert.component';
+import { DropdownComponent } from '../demo/dropdown/dropdown.component';
 
 const routes:any = [
   {
@@ -55,6 +56,10 @@ const routes:any = [
           {
             path: 'alert',
             component: AlertComponent
+          },
+          {
+            path: 'dropdown',
+            component: DropdownComponent
           }
         ]
       },

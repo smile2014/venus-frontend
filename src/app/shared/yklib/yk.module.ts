@@ -5,6 +5,7 @@ import { CheckboxModule } from './checkbox/checkbox.module';
 import { InputModule } from './input/input.module';
 import { ModalModule } from './modal/modal.module';
 import { AlertModule } from './alert/alert.module';
+import { DropdownModule } from './dropdown/dropdown.module';
 
 const module = [
   ButtonModule,
@@ -12,7 +13,8 @@ const module = [
   CheckboxModule,
   InputModule,
   ModalModule,
-  AlertModule
+  AlertModule,
+  DropdownModule
 ];
 
 @NgModule({
