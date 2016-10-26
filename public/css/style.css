@@ -2,11 +2,11 @@ body {
     background-color: #fff;
     color: #666;
     font-size: .75rem;
-    line-height: 1;
 }
 
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, span, p {
     font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei" !important;
+    line-height: 1 !important;
 }
 
 /* pagination */
@@ -44,3 +44,30 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, span, p {
     background-color: inherit;
 }
 /* pagination */
+
+/* modal */
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    padding: .75rem;
+}
+
+.modal-header button.close {
+    outline: none;
+}
+
+.modal-title {
+    line-height: 1;
+    font-size: 1.2rem;
+}
+
+.modal-body {
+    padding: .75rem;
+}
+
+.modal-footer {
+    padding: .75rem;
+}
+/* modal */

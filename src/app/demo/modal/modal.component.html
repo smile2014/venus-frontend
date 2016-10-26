@@ -1,5 +1,13 @@
 <h3>Modal</h3>
-<yk-modal [title]="'模态框1'" #myModal1 (submit)="submit1($event)">ceshiyixia</yk-modal>
-<yk-modal [title]="'模态框2'" #myModal2 [backdrop]="'static'" [keyboard]="false" (submit)="submit2($event)">ceshiyixia</yk-modal>
+<yk-modal [title]="'模态框1'" #myModal1 (submit)="submit1($event)">
+    <yk-input [label]="'姓名'"></yk-input>
+    <yk-input [label]="'性别'"></yk-input>
+    <yk-input [label]="'联系电话'"></yk-input>
+</yk-modal>
+<yk-modal [title]="'模态框2'" #myModal2 [backdrop]="'static'" [keyboard]="false" (submit)="submit2($event)">
+    <yk-input [label]="'姓名'"></yk-input>
+    <yk-input [label]="'性别'"></yk-input>
+    <yk-input [label]="'联系电话'"></yk-input>
+</yk-modal>
 <yk-button [type]="'primary'" (click)="open1()">打开模态框</yk-button>
 <yk-button [type]="'primary'" (click)="open2()">打开不能通过键盘和空白处取消的模态框</yk-button>
