@@ -8,6 +8,5 @@ import { Component, Input } from '@angular/core';
 
 export class InputComponent {
   @Input() label:string;
-  @Input() labelWidth:string;
-  showHint:boolean = true;
+  showHint:boolean = false;
 }
