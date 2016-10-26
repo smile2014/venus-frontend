@@ -1,4 +1,4 @@
-<ngb-alert *ngIf="isShow || alwaysShow" [type]="type" [class.fixed]="fixed" [dismissible]="false" (close)="_close($event)">
+<ngb-alert *ngIf="isShow" [type]="type" [class.fixed]="fixed" [dismissible]="false" (close)="_close($event)">
     <button type="button" class="close" (click)="hide()">
         <span>&times;</span>
     </button>

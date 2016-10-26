@@ -8,17 +8,15 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 export class AlertComponent {
   @Input() timeout:number;
-  @Input() alwaysShow:boolean;
   @Input() type:string;
   @Input() fixed:boolean;
   @Output() close = new EventEmitter();
 
-  isShow:boolean;
+  @Input() isShow:boolean;
 
   constructor() {
     this.isShow = false;
     this.timeout = 0;
-    this.alwaysShow = false;
     this.type = 'danger';
     this.fixed = false;
   }
