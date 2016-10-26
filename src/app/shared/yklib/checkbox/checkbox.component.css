@@ -3,6 +3,10 @@ label {
     margin: 0;
 }
 
+label.dis {
+    cursor: not-allowed;
+}
+
 input[type="checkbox"] {
     -webkit-appearance: none;
     background-size: 1rem 1rem;
