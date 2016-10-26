@@ -1,5 +1,42 @@
 <h3>Dropdown</h3>
-<yk-dropdown [text]="'触发下拉菜单'">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<yk-dropdown [text]="'触发下拉菜单'" #drop1>
+    <button class="dropdown-item">动作 - 1</button>
+    <button class="dropdown-item">动作 - 2</button>
+    <button class="dropdown-item">动作 - 3</button>
+    <button class="dropdown-item">动作 - 4</button>
+    <button class="dropdown-item">其他 动作</button>
+    <button class="dropdown-item">剩余的部分在这里</button>
+</yk-dropdown>
+<yk-dropdown [text]="'无法自动关闭的下拉菜单'" [autoClose]="false">
+    <button class="dropdown-item">动作 - 1</button>
+    <button class="dropdown-item">动作 - 2</button>
+    <button class="dropdown-item">动作 - 3</button>
+    <button class="dropdown-item">动作 - 4</button>
+    <button class="dropdown-item">其他 动作</button>
+    <button class="dropdown-item">剩余的部分在这里</button>
+</yk-dropdown>
+<yk-dropdown [up]="true" [text]="'触发上拉菜单'">
+    <button class="dropdown-item">动作 - 1</button>
+    <button class="dropdown-item">动作 - 2</button>
+    <button class="dropdown-item">其他 动作</button>
+    <button class="dropdown-item">剩余的部分在这里</button>
+</yk-dropdown>
+<yk-dropdown [text]="'默认打开的下拉菜单'" [open]="true">
+    <button class="dropdown-item">动作 - 1</button>
+    <button class="dropdown-item">动作 - 2</button>
+    <button class="dropdown-item">动作 - 3</button>
+    <button class="dropdown-item">动作 - 4</button>
+    <button class="dropdown-item">其他 动作</button>
+    <button class="dropdown-item">剩余的部分在这里</button>
+</yk-dropdown>
+<yk-dropdown [text]="'带有事件的下拉菜单'" (openChange)="change($event)">
     <button class="dropdown-item">动作 - 1</button>
     <button class="dropdown-item">动作 - 2</button>
     <button class="dropdown-item">动作 - 3</button>
@@ -12,9 +49,16 @@
 <br>
 <br>
 <br>
-<yk-dropdown [style.margin-left]="'18rem'" [up]="true" [text]="'触发上拉菜单'">
-    <button class="dropdown-item">动作 - 1</button>
-    <button class="dropdown-item">动作 - 2</button>
-    <button class="dropdown-item">其他 动作</button>
-    <button class="dropdown-item">剩余的部分在这里</button>
-</yk-dropdown>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+获取下拉状态：{{drop1.isOpen()}}
+<yk-button [type]="'success'" (click)="$event.stopPropagation(); drop1.drop();">从外部触发下拉</yk-button>
+<yk-button [type]="'danger'" (click)="$event.stopPropagation(); drop1.close();">从外部收起下拉</yk-button>
