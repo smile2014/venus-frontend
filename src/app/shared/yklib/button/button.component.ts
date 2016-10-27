@@ -10,6 +10,7 @@ export class ButtonComponent {
 
   @Input() type:string;
   @Input() i:string;
+  @Input() disabled:boolean;
 
   setClass() {
     return 'btn btn-' + this.type;
