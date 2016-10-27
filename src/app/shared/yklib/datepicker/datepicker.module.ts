@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DatepickerComponent } from './datepicker.component';
 
@@ -7,6 +9,8 @@ import { DatepickerComponent } from './datepicker.component';
     DatepickerComponent
   ],
   imports: [
+    CommonModule,
+    FormsModule,
     NgbModule.forRoot()
   ],
   exports: [
