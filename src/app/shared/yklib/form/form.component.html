@@ -5,10 +5,10 @@
         </div>
         <div class="foot-button">
             <yk-button [type]="submit" [classType]="'primary'" [disabled]="!form.valid">提交</yk-button>
-            <yk-button [classType]="'primary-outline'">取消</yk-button>
+            <yk-button [classType]="'primary-outline'" (cancel)="_cancel($event)">取消</yk-button>
         </div>
     </form>
-    <div *ngIf="payLoad" class="form-row">
-        <strong>Saved the following values</strong><br>{{payLoad}}
+    <div *ngIf="payLoad" class="foot-button">
+        <strong>当前提交的表单数据为：</strong><br><br>{{payLoad}}
     </div>
 </div>

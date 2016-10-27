@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormService } from './form.service';
 import { BaseModel } from './base.model';
 import { FormGroup } from '@angular/forms';
@@ -11,6 +11,7 @@ import { FormGroup } from '@angular/forms';
 
 export class FormComponent implements OnInit {
   @Input() models:BaseModel<any>[] = [];
+  @Output() cancel = new EventEmitter();
   form:FormGroup;
   payLoad:string = '';
 
@@ -24,5 +25,9 @@ export class FormComponent implements OnInit {
 
   onSubmit() {
     this.payLoad = JSON.stringify(this.form.value);
+  }
+
+  _cancel(event:any) {
+    this.cancel.emit(event);
   }
 }
