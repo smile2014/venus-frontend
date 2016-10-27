@@ -21,6 +21,15 @@
 
 .datepicker-addon {
     position: absolute;
-    top: .45rem;
+    top: 0;
     right: 0;
+    padding: .45rem;
+}
+
+.datepicker-addon i {
+    cursor: pointer;
+}
+
+.datepicker-addon i:focus {
+    color: #1898eb;
 }
