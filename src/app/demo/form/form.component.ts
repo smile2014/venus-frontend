@@ -52,8 +52,14 @@ export class FormComponent implements OnInit {
       new TextModel({
         key: 'emailAddress',
         label: '邮箱地址',
-        type: 'email',
-        order: 2
+        type: 'text',
+        order: 2,
+        validators: [
+            Validators.pattern('([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+')
+        ],
+        validatorMessages: {
+          'pattern': '邮箱格式不对'
+        }
       })
     ];
     return models.sort((a, b) => a.order - b.order);
