@@ -25,11 +25,11 @@
     color: #333333;
 }
 
-.form-content-text.ng-touched.ng-dirty.ng-valid {
+.form-content-text.ng-touched.ng-valid {
     border-color: #60a917;
 }
 
-.form-content-text.ng-touched.ng-pristine.ng-valid {
+.form-content-text:focus {
     border-color: #1898eb;
 }
 
@@ -48,11 +48,11 @@
     color: #333333;
 }
 
-.form-content-select.ng-touched.ng-dirty.ng-valid {
+.form-content-select.ng-touched.ng-valid {
     border-color: #60a917;
 }
 
-.form-content-select.ng-touched.ng-pristine.ng-valid {
+.form-content-select:focus {
     border-color: #1898eb;
 }
 
@@ -64,8 +64,4 @@
     margin-left: 7.2rem;
     color: #ce352c;
     margin-top: .25rem;
-}
-
-option {
-    white-space: inherit;
 }
