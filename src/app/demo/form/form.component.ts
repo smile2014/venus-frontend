@@ -38,7 +38,16 @@ export class FormComponent implements OnInit {
         label: '姓名',
         value: '杨恺',
         order: 1,
-        validators: [Validators.required]
+        validators: [
+          Validators.required,
+          Validators.minLength(4),
+          Validators.maxLength(10)
+        ],
+        validatorMessages: {
+          'required': '这是一个required',
+          'minlength': '这是一个minlength-4',
+          'maxlength': '这是一个maxlength-10'
+        }
       }),
       new TextModel({
         key: 'emailAddress',

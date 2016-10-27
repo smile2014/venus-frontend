@@ -3,6 +3,7 @@ export class BaseModel<T> {
   key:string;
   label:string;
   validators:any[];
+  validatorMessages:{};
   order:number;
   controlType:string;
 
@@ -11,6 +12,7 @@ export class BaseModel<T> {
     key?:string,
     label?:string,
     validators?:any[],
+    validatorMessages?:{},
     order?:number,
     controlType?:string
   } = {}) {
@@ -18,6 +20,7 @@ export class BaseModel<T> {
     this.key = options.key || '';
     this.label = options.label || '';
     this.validators = options.validators || [];
+    this.validatorMessages = options.validatorMessages || {};
     this.order = options.order === undefined ? 1 : options.order;
     this.controlType = options.controlType || '';
   }
