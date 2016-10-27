@@ -2,7 +2,7 @@ export class BaseModel<T> {
   value:T;
   key:string;
   label:string;
-  validators:[T];
+  validators:any[];
   order:number;
   controlType:string;
 
@@ -10,7 +10,7 @@ export class BaseModel<T> {
     value?:T,
     key?:string,
     label?:string,
-    validators?:{},
+    validators?:any[],
     order?:number,
     controlType?:string
   } = {}) {
