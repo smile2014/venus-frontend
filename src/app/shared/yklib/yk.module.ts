@@ -8,6 +8,7 @@ import { AlertModule } from './alert/alert.module';
 import { DropdownModule } from './dropdown/dropdown.module';
 import { RadioModule } from './radio/radio.module';
 import { FormModule } from './form/form.module';
+import { DatepickerModule } from './datepicker/datepicker.module';
 
 const module = [
   ButtonModule,
@@ -18,7 +19,8 @@ const module = [
   AlertModule,
   DropdownModule,
   RadioModule,
-  FormModule
+  FormModule,
+  DatepickerModule
 ];
 
 @NgModule({

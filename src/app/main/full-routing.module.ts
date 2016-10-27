@@ -12,6 +12,7 @@ import { AlertComponent } from '../demo/alert/alert.component';
 import { DropdownComponent } from '../demo/dropdown/dropdown.component';
 import { RadioComponent } from '../demo/radio/radio.component';
 import { FormComponent } from '../demo/form/form.component';
+import { DatepickerComponent } from '../demo/datepicker/datepicker.component';
 
 const routes:any = [
   {
@@ -70,6 +71,10 @@ const routes:any = [
           {
             path: 'form',
             component: FormComponent
+          },
+          {
+            path: 'datepicker',
+            component: DatepickerComponent
           }
         ]
       },

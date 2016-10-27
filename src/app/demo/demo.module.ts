@@ -11,6 +11,7 @@ import { AlertComponent } from './alert/alert.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { RadioComponent } from './radio/radio.component';
 import { FormComponent } from './form/form.component';
+import { DatepickerComponent } from './datepicker/datepicker.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormComponent } from './form/form.component';
     AlertComponent,
     DropdownComponent,
     RadioComponent,
-    FormComponent
+    FormComponent,
+    DatepickerComponent
   ],
   imports: [
     SharedModule
