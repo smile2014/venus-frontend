@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+//noinspection TypeScriptCheckImport
+import { UUID } from 'angular2-uuid';
 
 @Component({
   selector: 'yk-datepicker',
@@ -7,5 +9,12 @@ import { Component } from '@angular/core';
 })
 
 export class DatepickerComponent {
+  @Input() label:string;
+  inputId:string;
   model:any;
+
+  constructor() {
+    this.inputId = 'yk-datepicker' + UUID.UUID();
+  }
+
 }

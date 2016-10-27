@@ -1,11 +1,15 @@
-<div class="datepicker-wrapper">
-    <input class="datepicker-input"
-           placeholder="yyyy-mm-dd"
-           name="dp"
-           [(ngModel)]="model"
-           ngbDatepicker
-           #d="ngbDatepicker">
-    <div class="datepicker-addon" (click)="d.toggle()" >
-        <i class="fa fa-lg fa-calendar"></i>
+<div class="all-wrapper">
+    <label [attr.for]="inputId" class="form-label" *ngIf="label!==undefined">{{label}}</label>
+    <div class="datepicker-wrapper">
+        <input class="datepicker-input"
+               placeholder="yyyy-mm-dd"
+               name="dp"
+               [id]="inputId"
+               [(ngModel)]="model"
+               ngbDatepicker
+               #d="ngbDatepicker">
+        <div class="datepicker-addon" (click)="d.toggle()" >
+            <i class="fa fa-lg fa-calendar"></i>
+        </div>
     </div>
 </div>

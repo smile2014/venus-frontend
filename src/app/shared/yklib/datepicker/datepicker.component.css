@@ -1,5 +1,8 @@
-.datepicker-wrapper {
+.all-wrapper {
     margin-bottom: .75rem;
+}
+
+.datepicker-wrapper {
     position: relative;
     width: 20rem;
 }
@@ -32,4 +35,12 @@
 
 .datepicker-addon i:focus {
     color: #1898eb;
+}
+
+.form-label {
+    width: 7rem;
+    text-align: right;
+    padding-right: .75rem;
+    cursor: pointer;
+    display: inline-block;
 }
