@@ -5,6 +5,7 @@
 .datepicker-wrapper {
     position: relative;
     width: 20rem;
+    display: inline-block;
 }
 
 .datepicker-input {
