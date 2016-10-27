@@ -1,5 +1,7 @@
 .datepicker-wrapper {
     margin-bottom: .75rem;
+    position: relative;
+    width: 20rem;
 }
 
 .datepicker-input {
@@ -18,5 +20,7 @@
 }
 
 .datepicker-addon {
-    
+    position: absolute;
+    top: .45rem;
+    right: 0;
 }
