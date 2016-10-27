@@ -10,6 +10,7 @@ import { ModalComponent } from './modal/modal.component';
 import { AlertComponent } from './alert/alert.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { RadioComponent } from './radio/radio.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RadioComponent } from './radio/radio.component';
     ModalComponent,
     AlertComponent,
     DropdownComponent,
-    RadioComponent
+    RadioComponent,
+    FormComponent
   ],
   imports: [
     SharedModule
