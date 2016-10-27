@@ -1,11 +1,11 @@
 <div>
     <form (ngSubmit)="onSubmit()" [formGroup]="form">
-        <div *ngFor="let model of models" class="form-row">
+        <div *ngFor="let model of models">
             <bf-model [model]="model" [form]="form"></bf-model>
         </div>
-        <div>
-            <yk-button [type]="submit" [disabled]="!form.valid">Save</yk-button>
-            <button type="button" [disabled]="!form.valid">Save</button>
+        <div class="foot-button">
+            <yk-button [type]="submit" [classType]="'primary'" [disabled]="!form.valid">提交</yk-button>
+            <yk-button [classType]="'primary-outline'">取消</yk-button>
         </div>
     </form>
     <div *ngIf="payLoad" class="form-row">
