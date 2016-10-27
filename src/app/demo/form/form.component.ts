@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Validators } from '@angular/forms';
 import { BaseModel } from '../../shared/yklib/form/base.model';
 import { SelectModel } from '../../shared/yklib/form/select.model';
 import { TextModel } from '../../shared/yklib/form/text.model';
@@ -23,24 +24,25 @@ export class FormComponent implements OnInit {
     let models:BaseModel<any>[] = [
       new SelectModel({
         key: 'brave',
-        label: 'Bravery Rating',
+        label: '英雄等级',
         options: [
-          {key: 'solid', value: 'Solid'},
-          {key: 'great', value: 'Great'},
-          {key: 'good', value: 'Good'},
-          {key: 'unproven', value: 'Unproven'}
+          {key: 'solid', value: '可靠'},
+          {key: 'good', value: '不错'},
+          {key: 'great', value: '很好'},
+          {key: 'wonderful', value: '卓越'}
         ],
         order: 3
       }),
       new TextModel({
         key: 'firstName',
-        label: 'First name',
-        value: 'Bombasto',
-        order: 1
+        label: '姓名',
+        value: '杨恺',
+        order: 1,
+        validators: [Validators.required]
       }),
       new TextModel({
         key: 'emailAddress',
-        label: 'Email',
+        label: '邮箱地址',
         type: 'email',
         order: 2
       })

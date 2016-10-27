@@ -1,9 +1,9 @@
-<div [formGroup]="form">
-    <label [attr.for]="model.key">{{model.label}}</label>
-    <div [ngSwitch]="model.controlType">
-        <input *ngSwitchCase="'textbox'" [formControlName]="model.key"
+<div [formGroup]="form" class="form-wrapper">
+    <label [attr.for]="model.key" class="form-label">{{model.label}}</label>
+    <div [ngSwitch]="model.controlType" class="form-content">
+        <input *ngSwitchCase="'textbox'" [formControlName]="model.key" class="form-content-text"
                [id]="model.key" [type]="model.type">
-        <select [id]="model.key" *ngSwitchCase="'dropdown'" [formControlName]="model.key">
+        <select [id]="model.key" *ngSwitchCase="'dropdown'" [formControlName]="model.key" class="form-content-select">
             <option *ngFor="let opt of model.options" [value]="opt.key">{{opt.value}}</option>
         </select>
     </div>

@@ -1,0 +1,31 @@
+.form-wrapper {
+    margin-bottom: .75rem;
+}
+
+.form-label {
+    width: 7rem;
+    text-align: right;
+    padding-right: .75rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.form-content {
+    display: inline-block;
+}
+
+.form-content-text {
+    width: 20rem;
+    padding: .45rem;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    font-weight: normal;
+    color: #333333;
+}
+
+.form-content-text:focus {
+    border-color: #1898eb;
+    outline: none;
+}
