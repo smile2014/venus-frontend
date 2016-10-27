@@ -7,6 +7,6 @@
             <option *ngFor="let opt of model.options" [value]="opt.key">{{opt.value}}</option>
         </select>
     </div>
-    <div class="errorMessage" *ngIf="!isValid">{{model.label}} is required</div>
+    <div class="errorMessage" *ngIf="!isValid">{{model.label}}必填</div>
 </div>
 
