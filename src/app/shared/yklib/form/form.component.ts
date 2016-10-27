@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormService } from './form.service';
+import { BaseModel } from './base.model';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'yk-form',
@@ -6,6 +9,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.css']
 })
 
-export class FormComponent {
+export class FormComponent implements OnInit {
+  @Input() models:BaseModel<any>[] = [];
+  form:FormGroup;
+  payLoad:string = '';
 
+  constructor(private formService:FormService) {
+
+  }
+
+  ngOnInit() {
+    this.form = this.formService.toForm(this.models);
+  }
+
+  onSubmit() {
+    this.payLoad = JSON.stringify(this.form.value);
+  }
 }
