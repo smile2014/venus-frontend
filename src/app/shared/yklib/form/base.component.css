@@ -15,7 +15,7 @@
 }
 
 .form-content-text {
-    width: 20rem;
+    width: 25rem;
     padding: .45rem;
     border: 1px solid #dddddd;
     border-radius: 0;
@@ -38,7 +38,7 @@
 }
 
 .form-content-select {
-    width: 20rem;
+    width: 25rem;
     padding: .32rem .2rem;
     border: 1px solid #dddddd;
     border-radius: 0;
