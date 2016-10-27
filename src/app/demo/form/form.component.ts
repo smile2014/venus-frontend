@@ -59,7 +59,7 @@ export class FormComponent implements OnInit {
             Validators.pattern('([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+')
         ],
         validatorMessages: {
-          'required': '邮箱是必须的',
+          'required': '邮箱未填',
           'pattern': '邮箱格式不对'
         }
       })
