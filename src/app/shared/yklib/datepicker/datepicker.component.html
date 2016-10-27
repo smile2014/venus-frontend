@@ -1,4 +1,11 @@
-<input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
-<div class="input-group-addon" (click)="d.toggle()" >
-    <i class="fa fa-calendar"></i>
+<div class="datepicker-wrapper">
+    <input class="datepicker-input"
+           placeholder="yyyy-mm-dd"
+           name="dp"
+           [(ngModel)]="model"
+           ngbDatepicker
+           #d="ngbDatepicker">
+    <div class="datepicker-addon" (click)="d.toggle()" >
+        <i class="fa fa-calendar"></i>
+    </div>
 </div>

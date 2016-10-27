@@ -1,0 +1,22 @@
+.datepicker-wrapper {
+    margin-bottom: .75rem;
+}
+
+.datepicker-input {
+    width: 20rem;
+    padding: .45rem;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    font-weight: normal;
+    color: #333333;
+}
+
+.datepicker-input:focus {
+    border-color: #1898eb;
+}
+
+.datepicker-addon {
+    
+}
