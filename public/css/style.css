@@ -83,26 +83,26 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, span, p {
 
 .alert-danger {
     color: #ffffff;
-    background-color: #d9534f;
-    border-color: #d9534f;
+    background-color: #ce352c;
+    border-color: #ce352c;
 }
 
 .alert-success {
     color: #ffffff;
-    background-color: #5cb85c;
-    border-color: #5cb85c;
+    background-color: #60a917;
+    border-color: #60a917;
 }
 
 .alert-warning {
     color: #ffffff;
-    background-color: #f0ad4e;
-    border-color: #f0ad4e;
+    background-color: #fa6800;
+    border-color: #fa6800;
 }
 
 .alert-info {
     color: #ffffff;
-    background-color: #5bc0de;
-    border-color: #5bc0de;
+    background-color: #1ba1e2;
+    border-color: #1ba1e2;
 }
 
 /* alert */
