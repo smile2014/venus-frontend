@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormComponent } from './form.component';
 import { FormService } from './form.service';
 import { BaseComponent } from './base.component';
+import { ButtonModule } from '../button/button.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { BaseComponent } from './base.component';
   ],
   imports: [
     CommonModule,
+    ButtonModule,
     ReactiveFormsModule
   ],
   providers: [

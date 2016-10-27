@@ -29,3 +29,19 @@
     border-color: #1898eb;
     outline: none;
 }
+
+.form-content-select {
+    width: 20rem;
+    padding: .45rem;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    font-weight: normal;
+    color: #333333;
+}
+
+.form-content-select:focus {
+    border-color: #1898eb;
+    outline: none;
+}
