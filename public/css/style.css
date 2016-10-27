@@ -109,3 +109,15 @@ body, span {
 }
 
 /* alert */
+
+/* datepicker */
+.datepicker-wrapper .dropdown-menu {
+    font-size: .75rem;
+    border-radius: 0;
+}
+
+.datepicker-wrapper .day, .datepicker-wrapper .weekday {
+    padding: .25rem;
+}
+
+/* datepicker */
